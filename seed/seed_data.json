@@ -1,0 +1,3170 @@
+{
+ "OPS": {
+  "volt": {
+   "name": "VoltGH",
+   "kind": "charge",
+   "cc": "gh"
+  },
+  "sun": {
+   "name": "SunCharge",
+   "kind": "charge",
+   "cc": "gh"
+  },
+  "eco": {
+   "name": "EcoBolt",
+   "kind": "charge",
+   "cc": "gh"
+  },
+  "gold": {
+   "name": "GoldCoast EV",
+   "kind": "charge",
+   "cc": "gh"
+  },
+  "kplg": {
+   "name": "Ashanti Plug",
+   "kind": "charge",
+   "cc": "gh"
+  },
+  "pswap": {
+   "name": "PowerSwap GH",
+   "kind": "swap",
+   "cc": "gh"
+  },
+  "zips": {
+   "name": "ZipSwap",
+   "kind": "swap",
+   "cc": "gh"
+  },
+  "keke": {
+   "name": "KekeVolt",
+   "kind": "swap",
+   "cc": "gh"
+  },
+  "lvolt": {
+   "name": "LagosVolt",
+   "kind": "charge",
+   "cc": "ng"
+  },
+  "eko": {
+   "name": "Eko Charge",
+   "kind": "charge",
+   "cc": "ng"
+  },
+  "okswap": {
+   "name": "OkadaSwap NG",
+   "kind": "swap",
+   "cc": "ng"
+  },
+  "sav": {
+   "name": "Savanna Charge",
+   "kind": "charge",
+   "cc": "ke"
+  },
+  "boda": {
+   "name": "BodaSwap KE",
+   "kind": "swap",
+   "cc": "ke"
+  },
+  "lag": {
+   "name": "Lagune Énergie",
+   "kind": "charge",
+   "cc": "ci"
+  },
+  "woro": {
+   "name": "WoroSwap",
+   "kind": "swap",
+   "cc": "ci"
+  },
+  "inz": {
+   "name": "Inzira Charge",
+   "kind": "charge",
+   "cc": "rw"
+  },
+  "motor": {
+   "name": "MotoSwap RW",
+   "kind": "swap",
+   "cc": "rw"
+  },
+  "tgv": {
+   "name": "Togo Volt",
+   "kind": "charge",
+   "cc": "tg"
+  },
+  "zem": {
+   "name": "ZemSwap TG",
+   "kind": "swap",
+   "cc": "tg"
+  }
+ },
+ "STATIONS": [
+  {
+   "id": "GH-VG-001",
+   "op": "volt",
+   "name": "Airport City Hub",
+   "area": "Airport City, Accra",
+   "lat": 5.605,
+   "lng": -0.171,
+   "price": 6.2,
+   "hours": "Open 24 hours",
+   "amen": "Café, restrooms, Wi-Fi",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-001-1",
+     "status": "available"
+    },
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-001-2",
+     "status": "offline"
+    },
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-001-3",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-VG-001-4",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 3.6,
+   "n0": 12,
+   "upd": 1
+  },
+  {
+   "id": "GH-SC-014",
+   "op": "sun",
+   "name": "East Legon Solar Park",
+   "area": "East Legon, Accra",
+   "lat": 5.636,
+   "lng": -0.157,
+   "price": 5.4,
+   "hours": "6am – 10pm",
+   "amen": "Shaded parking, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-SC-014-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-SC-014-2",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-SC-014-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.5,
+   "n0": 65,
+   "upd": 8
+  },
+  {
+   "id": "GH-EB-003",
+   "op": "eco",
+   "name": "Osu Oxford Street",
+   "area": "Osu, Accra",
+   "lat": 5.556,
+   "lng": -0.182,
+   "price": 5.9,
+   "hours": "Open 24 hours",
+   "amen": "Restaurants, shopping",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-EB-003-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 11,
+     "id": "GH-EB-003-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4,
+   "n0": 118,
+   "upd": 6
+  },
+  {
+   "id": "GH-GC-007",
+   "op": "gold",
+   "name": "Accra Mall",
+   "area": "Tetteh Quarshie, Accra",
+   "lat": 5.622,
+   "lng": -0.174,
+   "price": 6.5,
+   "hours": "8am – 10pm",
+   "amen": "Mall, food court, cinema",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 150,
+     "id": "GH-GC-007-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 150,
+     "id": "GH-GC-007-2",
+     "status": "available"
+    },
+    {
+     "type": "CHAdeMO",
+     "kw": 50,
+     "id": "GH-GC-007-3",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-GC-007-4",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.9,
+   "n0": 31,
+   "upd": 4
+  },
+  {
+   "id": "GH-VG-009",
+   "op": "volt",
+   "name": "Spintex Road",
+   "area": "Spintex, Accra",
+   "lat": 5.636,
+   "lng": -0.105,
+   "price": 6.2,
+   "hours": "Open 24 hours",
+   "amen": "Fuel station shop",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-VG-009-1",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "GH-VG-009-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.4,
+   "n0": 84,
+   "upd": 2
+  },
+  {
+   "id": "GH-EB-011",
+   "op": "eco",
+   "name": "Tema Community 1",
+   "area": "Tema",
+   "lat": 5.669,
+   "lng": -0.017,
+   "price": 5.7,
+   "hours": "6am – 11pm",
+   "amen": "Restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-EB-011-1",
+     "status": "busy"
+    },
+    {
+     "type": "GB/T",
+     "kw": 40,
+     "id": "GH-EB-011-2",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-EB-011-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 3.9,
+   "n0": 137,
+   "upd": 9
+  },
+  {
+   "id": "GH-SC-020",
+   "op": "sun",
+   "name": "Kasoa Toll Rest Stop",
+   "area": "Kasoa, Central",
+   "lat": 5.534,
+   "lng": -0.418,
+   "price": 5.2,
+   "hours": "Open 24 hours",
+   "amen": "Chop bar, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "GH-SC-020-1",
+     "status": "available"
+    },
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "GH-SC-020-2",
+     "status": "offline"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "GH-SC-020-3",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.8,
+   "n0": 50,
+   "upd": 7
+  },
+  {
+   "id": "GH-GC-002",
+   "op": "gold",
+   "name": "Winneba Junction",
+   "area": "Winneba, Central",
+   "lat": 5.351,
+   "lng": -0.623,
+   "price": 6,
+   "hours": "Open 24 hours",
+   "amen": "Fuel station shop",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-GC-002-1",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.3,
+   "n0": 103,
+   "upd": 5
+  },
+  {
+   "id": "GH-GC-004",
+   "op": "gold",
+   "name": "Cape Coast Castle Road",
+   "area": "Cape Coast",
+   "lat": 5.105,
+   "lng": -1.246,
+   "price": 6,
+   "hours": "7am – 9pm",
+   "amen": "Hotel, restaurant",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-GC-004-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-GC-004-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 3.8000000000000003,
+   "n0": 16,
+   "upd": 3
+  },
+  {
+   "id": "GH-VG-015",
+   "op": "volt",
+   "name": "Takoradi Harbour View",
+   "area": "Takoradi, Western",
+   "lat": 4.898,
+   "lng": -1.76,
+   "price": 6.4,
+   "hours": "Open 24 hours",
+   "amen": "Café, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-015-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-015-2",
+     "status": "available"
+    },
+    {
+     "type": "CHAdeMO",
+     "kw": 50,
+     "id": "GH-VG-015-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.7,
+   "n0": 69,
+   "upd": 1
+  },
+  {
+   "id": "GH-EB-021",
+   "op": "eco",
+   "name": "Koforidua Central",
+   "area": "Koforidua, Eastern",
+   "lat": 6.094,
+   "lng": -0.259,
+   "price": 5.6,
+   "hours": "6am – 10pm",
+   "amen": "Market nearby",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-EB-021-1",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 40,
+     "id": "GH-EB-021-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.2,
+   "n0": 122,
+   "upd": 8
+  },
+  {
+   "id": "GH-AP-001",
+   "op": "kplg",
+   "name": "Kumasi Adum",
+   "area": "Adum, Kumasi",
+   "lat": 6.688,
+   "lng": -1.624,
+   "price": 5.8,
+   "hours": "Open 24 hours",
+   "amen": "Restaurants, shopping",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-AP-001-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-AP-001-2",
+     "status": "available"
+    },
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-AP-001-3",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "GH-AP-001-4",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-AP-001-5",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 3.7,
+   "n0": 35,
+   "upd": 6
+  },
+  {
+   "id": "GH-AP-006",
+   "op": "kplg",
+   "name": "KNUST Gate",
+   "area": "Ayeduase, Kumasi",
+   "lat": 6.675,
+   "lng": -1.565,
+   "price": 5.5,
+   "hours": "6am – 10pm",
+   "amen": "Food vendors",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-AP-006-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-AP-006-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.6,
+   "n0": 88,
+   "upd": 4
+  },
+  {
+   "id": "GH-SC-031",
+   "op": "sun",
+   "name": "Ho Solar Station",
+   "area": "Ho, Volta",
+   "lat": 6.6,
+   "lng": 0.47,
+   "price": 5,
+   "hours": "6am – 8pm",
+   "amen": "Shaded parking",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-SC-031-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-SC-031-2",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.1,
+   "n0": 141,
+   "upd": 2
+  },
+  {
+   "id": "GH-AP-010",
+   "op": "kplg",
+   "name": "Sunyani Fiapre Road",
+   "area": "Sunyani, Bono",
+   "lat": 7.339,
+   "lng": -2.327,
+   "price": 5.9,
+   "hours": "7am – 9pm",
+   "amen": "Restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-AP-010-1",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 40,
+     "id": "GH-AP-010-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 3.6,
+   "n0": 54,
+   "upd": 9
+  },
+  {
+   "id": "GH-SC-040",
+   "op": "sun",
+   "name": "Kintampo Highway Stop",
+   "area": "Kintampo, Bono East",
+   "lat": 8.056,
+   "lng": -1.731,
+   "price": 5.3,
+   "hours": "Open 24 hours",
+   "amen": "Restaurant, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "GH-SC-040-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "GH-SC-040-2",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "GH-SC-040-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.5,
+   "n0": 107,
+   "upd": 7
+  },
+  {
+   "id": "GH-VG-022",
+   "op": "volt",
+   "name": "Tamale Central",
+   "area": "Tamale, Northern",
+   "lat": 9.404,
+   "lng": -0.853,
+   "price": 6.1,
+   "hours": "Open 24 hours",
+   "amen": "Café, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "GH-VG-022-1",
+     "status": "available"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "GH-VG-022-2",
+     "status": "offline"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-VG-022-3",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4,
+   "n0": 20,
+   "upd": 5
+  },
+  {
+   "id": "GH-EB-030",
+   "op": "eco",
+   "name": "Bolgatanga Market",
+   "area": "Bolgatanga, Upper East",
+   "lat": 10.785,
+   "lng": -0.851,
+   "price": 5.8,
+   "hours": "7am – 8pm",
+   "amen": "Market",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "GH-EB-030-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "GH-EB-030-2",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "cc": "gh",
+   "r0": 4.9,
+   "n0": 73,
+   "upd": 3
+  },
+  {
+   "id": "GH-PS-001",
+   "kind": "swap",
+   "op": "pswap",
+   "name": "Madina Zongo Junction",
+   "area": "Madina, Accra",
+   "lat": 5.6698,
+   "lng": -0.1665,
+   "price": 25,
+   "hours": "5am – 11pm",
+   "amen": "Okada station, kiosk",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 4.4,
+   "n0": 126,
+   "upd": 1,
+   "conns": [
+    {
+     "id": "GH-PS-001-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-001-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-001-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-001-S8",
+     "slot": 8,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-001-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-001-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-001-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "GH-PS-004",
+   "kind": "swap",
+   "op": "pswap",
+   "name": "Kwame Nkrumah Circle",
+   "area": "Circle, Accra",
+   "lat": 5.57,
+   "lng": -0.214,
+   "price": 25,
+   "hours": "Open 24 hours",
+   "amen": "Lorry station, food vendors",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 18,
+   "cc": "gh",
+   "r0": 3.9,
+   "n0": 39,
+   "upd": 8,
+   "conns": [
+    {
+     "id": "GH-PS-004-S1",
+     "slot": 1,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-004-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S6",
+     "slot": 6,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S9",
+     "slot": 9,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-004-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S12",
+     "slot": 12,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S13",
+     "slot": 13,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S14",
+     "slot": 14,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S15",
+     "slot": 15,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-004-S16",
+     "slot": 16,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-004-S17",
+     "slot": 17,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-004-S18",
+     "slot": 18,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "GH-ZS-002",
+   "kind": "swap",
+   "op": "zips",
+   "name": "Kaneshie Market",
+   "area": "Kaneshie, Accra",
+   "lat": 5.566,
+   "lng": -0.237,
+   "price": 22,
+   "hours": "5am – 10pm",
+   "amen": "Market, restrooms",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 4.8,
+   "n0": 92,
+   "upd": 6,
+   "conns": [
+    {
+     "id": "GH-ZS-002-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-002-S2",
+     "slot": 2,
+     "status": "offline"
+    },
+    {
+     "id": "GH-ZS-002-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-002-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-002-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-002-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-002-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-002-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-002-S9",
+     "slot": 9,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-002-S10",
+     "slot": 10,
+     "status": "offline"
+    },
+    {
+     "id": "GH-ZS-002-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-002-S12",
+     "slot": 12,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "GH-KV-001",
+   "kind": "swap",
+   "op": "keke",
+   "name": "Ashaiman Main Station",
+   "area": "Ashaiman, Tema",
+   "lat": 5.694,
+   "lng": -0.033,
+   "price": 35,
+   "hours": "5am – 11pm",
+   "amen": "Lorry station",
+   "veh": [
+    "Tricycle"
+   ],
+   "pack": "72V · 3.6 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 4.3,
+   "n0": 145,
+   "upd": 4,
+   "conns": [
+    {
+     "id": "GH-KV-001-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-001-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-001-S3",
+     "slot": 3,
+     "status": "offline"
+    },
+    {
+     "id": "GH-KV-001-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-001-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-001-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-001-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-001-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-001-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-001-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-001-S11",
+     "slot": 11,
+     "status": "offline"
+    },
+    {
+     "id": "GH-KV-001-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "GH-ZS-007",
+   "kind": "swap",
+   "op": "zips",
+   "name": "Kasoa Old Market",
+   "area": "Kasoa, Central",
+   "lat": 5.533,
+   "lng": -0.425,
+   "price": 22,
+   "hours": "5am – 10pm",
+   "amen": "Market",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 3.8000000000000003,
+   "n0": 58,
+   "upd": 2,
+   "conns": [
+    {
+     "id": "GH-ZS-007-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-007-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-007-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-007-S4",
+     "slot": 4,
+     "status": "offline"
+    },
+    {
+     "id": "GH-ZS-007-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-007-S6",
+     "slot": 6,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-007-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-007-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-007-S9",
+     "slot": 9,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-007-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-007-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-007-S12",
+     "slot": 12,
+     "status": "offline"
+    }
+   ]
+  },
+  {
+   "id": "GH-PS-010",
+   "kind": "swap",
+   "op": "pswap",
+   "name": "Kejetia Terminal",
+   "area": "Kejetia, Kumasi",
+   "lat": 6.699,
+   "lng": -1.623,
+   "price": 25,
+   "hours": "Open 24 hours",
+   "amen": "Market, lorry terminal",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 18,
+   "cc": "gh",
+   "r0": 4.7,
+   "n0": 111,
+   "upd": 9,
+   "conns": [
+    {
+     "id": "GH-PS-010-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S5",
+     "slot": 5,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-010-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S12",
+     "slot": 12,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S13",
+     "slot": 13,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-010-S14",
+     "slot": 14,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S15",
+     "slot": 15,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-010-S16",
+     "slot": 16,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S17",
+     "slot": 17,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-010-S18",
+     "slot": 18,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "GH-KV-005",
+   "kind": "swap",
+   "op": "keke",
+   "name": "Takoradi Market Circle",
+   "area": "Takoradi, Western",
+   "lat": 4.897,
+   "lng": -1.755,
+   "price": 35,
+   "hours": "6am – 10pm",
+   "amen": "Market",
+   "veh": [
+    "Tricycle"
+   ],
+   "pack": "72V · 3.6 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 4.2,
+   "n0": 24,
+   "upd": 7,
+   "conns": [
+    {
+     "id": "GH-KV-005-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-005-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-005-S6",
+     "slot": 6,
+     "status": "offline"
+    },
+    {
+     "id": "GH-KV-005-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-005-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "GH-KV-005-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "GH-KV-005-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "GH-ZS-012",
+   "kind": "swap",
+   "op": "zips",
+   "name": "Ho Central Market",
+   "area": "Ho, Volta",
+   "lat": 6.601,
+   "lng": 0.469,
+   "price": 22,
+   "hours": "6am – 9pm",
+   "amen": "Market",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 6,
+   "cc": "gh",
+   "r0": 3.7,
+   "n0": 77,
+   "upd": 5,
+   "conns": [
+    {
+     "id": "GH-ZS-012-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-012-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-012-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-012-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "GH-ZS-012-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "GH-ZS-012-S6",
+     "slot": 6,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "GH-PS-020",
+   "kind": "swap",
+   "op": "pswap",
+   "name": "Tamale Aboabo",
+   "area": "Tamale, Northern",
+   "lat": 9.4,
+   "lng": -0.842,
+   "price": 25,
+   "hours": "5am – 10pm",
+   "amen": "Lorry station, chop bar",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 12,
+   "cc": "gh",
+   "r0": 4.6,
+   "n0": 130,
+   "upd": 3,
+   "conns": [
+    {
+     "id": "GH-PS-020-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-020-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-020-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-020-S8",
+     "slot": 8,
+     "status": "offline"
+    },
+    {
+     "id": "GH-PS-020-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "GH-PS-020-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "GH-PS-020-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "NG-LV-001",
+   "cc": "ng",
+   "op": "lvolt",
+   "name": "Lekki Phase 1",
+   "area": "Lekki, Lagos",
+   "lat": 6.4474,
+   "lng": 3.4723,
+   "price": 300,
+   "hours": "Open 24 hours",
+   "amen": "Café, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "NG-LV-001-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "NG-LV-001-2",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "NG-LV-001-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.1,
+   "n0": 43,
+   "upd": 1
+  },
+  {
+   "id": "NG-EK-004",
+   "cc": "ng",
+   "op": "eko",
+   "name": "Victoria Island Hub",
+   "area": "Victoria Island, Lagos",
+   "lat": 6.4281,
+   "lng": 3.4219,
+   "price": 320,
+   "hours": "6am – 11pm",
+   "amen": "Mall, food court",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "NG-EK-004-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "NG-EK-004-2",
+     "status": "offline"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "NG-EK-004-3",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "r0": 3.6,
+   "n0": 96,
+   "upd": 8
+  },
+  {
+   "id": "NG-LV-009",
+   "cc": "ng",
+   "op": "lvolt",
+   "name": "Ikeja Allen Avenue",
+   "area": "Ikeja, Lagos",
+   "lat": 6.6018,
+   "lng": 3.3515,
+   "price": 300,
+   "hours": "Open 24 hours",
+   "amen": "Restaurants",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "NG-LV-009-1",
+     "status": "busy"
+    },
+    {
+     "type": "GB/T",
+     "kw": 60,
+     "id": "NG-LV-009-2",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.5,
+   "n0": 149,
+   "upd": 6
+  },
+  {
+   "id": "NG-EK-012",
+   "cc": "ng",
+   "op": "eko",
+   "name": "Wuse 2",
+   "area": "Wuse, Abuja",
+   "lat": 9.0765,
+   "lng": 7.4793,
+   "price": 310,
+   "hours": "7am – 10pm",
+   "amen": "Shopping",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "NG-EK-012-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "NG-EK-012-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4,
+   "n0": 62,
+   "upd": 4
+  },
+  {
+   "id": "NG-OS-002",
+   "cc": "ng",
+   "kind": "swap",
+   "op": "okswap",
+   "name": "Yaba Tech Gate",
+   "area": "Yaba, Lagos",
+   "lat": 6.5095,
+   "lng": 3.3711,
+   "price": 1800,
+   "hours": "5am – 11pm",
+   "amen": "Food vendors",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 12,
+   "r0": 4.9,
+   "n0": 115,
+   "upd": 2,
+   "conns": [
+    {
+     "id": "NG-OS-002-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-002-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-002-S5",
+     "slot": 5,
+     "status": "offline"
+    },
+    {
+     "id": "NG-OS-002-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-002-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-002-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-002-S12",
+     "slot": 12,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "NG-OS-006",
+   "cc": "ng",
+   "kind": "swap",
+   "op": "okswap",
+   "name": "Oshodi Interchange",
+   "area": "Oshodi, Lagos",
+   "lat": 6.555,
+   "lng": 3.3437,
+   "price": 1800,
+   "hours": "Open 24 hours",
+   "amen": "Bus terminal",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 18,
+   "r0": 4.4,
+   "n0": 28,
+   "upd": 9,
+   "conns": [
+    {
+     "id": "NG-OS-006-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S6",
+     "slot": 6,
+     "status": "offline"
+    },
+    {
+     "id": "NG-OS-006-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S12",
+     "slot": 12,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S13",
+     "slot": 13,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S14",
+     "slot": 14,
+     "status": "offline"
+    },
+    {
+     "id": "NG-OS-006-S15",
+     "slot": 15,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S16",
+     "slot": 16,
+     "status": "busy"
+    },
+    {
+     "id": "NG-OS-006-S17",
+     "slot": 17,
+     "status": "available"
+    },
+    {
+     "id": "NG-OS-006-S18",
+     "slot": 18,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "KE-SV-001",
+   "cc": "ke",
+   "op": "sav",
+   "name": "Westlands Square",
+   "area": "Westlands, Nairobi",
+   "lat": -1.2676,
+   "lng": 36.8108,
+   "price": 35,
+   "hours": "Open 24 hours",
+   "amen": "Café, Wi-Fi",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "KE-SV-001-1",
+     "status": "busy"
+    },
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "KE-SV-001-2",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "KE-SV-001-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 3.9,
+   "n0": 81,
+   "upd": 7
+  },
+  {
+   "id": "KE-SV-005",
+   "cc": "ke",
+   "op": "sav",
+   "name": "Upper Hill",
+   "area": "Upper Hill, Nairobi",
+   "lat": -1.2985,
+   "lng": 36.8155,
+   "price": 35,
+   "hours": "6am – 10pm",
+   "amen": "Offices, restrooms",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "KE-SV-005-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "KE-SV-005-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.8,
+   "n0": 134,
+   "upd": 5
+  },
+  {
+   "id": "KE-SV-011",
+   "cc": "ke",
+   "op": "sav",
+   "name": "Nyali Bridge",
+   "area": "Nyali, Mombasa",
+   "lat": -4.0219,
+   "lng": 39.714,
+   "price": 38,
+   "hours": "7am – 9pm",
+   "amen": "Mall",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "KE-SV-011-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "KE-SV-011-2",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.3,
+   "n0": 47,
+   "upd": 3
+  },
+  {
+   "id": "KE-BS-003",
+   "cc": "ke",
+   "kind": "swap",
+   "op": "boda",
+   "name": "Eastleigh 1st Avenue",
+   "area": "Eastleigh, Nairobi",
+   "lat": -1.2754,
+   "lng": 36.8494,
+   "price": 180,
+   "hours": "5am – 11pm",
+   "amen": "Boda stage, kiosk",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 18,
+   "r0": 3.8000000000000003,
+   "n0": 100,
+   "upd": 1,
+   "conns": [
+    {
+     "id": "KE-BS-003-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S2",
+     "slot": 2,
+     "status": "offline"
+    },
+    {
+     "id": "KE-BS-003-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S9",
+     "slot": 9,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S10",
+     "slot": 10,
+     "status": "offline"
+    },
+    {
+     "id": "KE-BS-003-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S12",
+     "slot": 12,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S13",
+     "slot": 13,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S14",
+     "slot": 14,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S15",
+     "slot": 15,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S16",
+     "slot": 16,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-003-S17",
+     "slot": 17,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-003-S18",
+     "slot": 18,
+     "status": "offline"
+    }
+   ]
+  },
+  {
+   "id": "KE-BS-008",
+   "cc": "ke",
+   "kind": "swap",
+   "op": "boda",
+   "name": "Kasarani Stage",
+   "area": "Kasarani, Nairobi",
+   "lat": -1.221,
+   "lng": 36.8986,
+   "price": 180,
+   "hours": "5am – 10pm",
+   "amen": "Boda stage",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 12,
+   "r0": 4.7,
+   "n0": 13,
+   "upd": 8,
+   "conns": [
+    {
+     "id": "KE-BS-008-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-008-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-008-S3",
+     "slot": 3,
+     "status": "offline"
+    },
+    {
+     "id": "KE-BS-008-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-008-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-008-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-008-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-008-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-008-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "KE-BS-008-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "KE-BS-008-S11",
+     "slot": 11,
+     "status": "offline"
+    },
+    {
+     "id": "KE-BS-008-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "CI-LE-001",
+   "cc": "ci",
+   "op": "lag",
+   "name": "Plateau Centre",
+   "area": "Plateau, Abidjan",
+   "lat": 5.3238,
+   "lng": -4.0193,
+   "price": 160,
+   "hours": "Open 24 hours",
+   "amen": "Offices, café",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 120,
+     "id": "CI-LE-001-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "CI-LE-001-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.2,
+   "n0": 66,
+   "upd": 6
+  },
+  {
+   "id": "CI-LE-004",
+   "cc": "ci",
+   "op": "lag",
+   "name": "Cocody Riviera",
+   "area": "Cocody, Abidjan",
+   "lat": 5.354,
+   "lng": -3.987,
+   "price": 160,
+   "hours": "6am – 11pm",
+   "amen": "Shopping",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "CI-LE-004-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "CI-LE-004-2",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "CI-LE-004-3",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 3.7,
+   "n0": 119,
+   "upd": 4
+  },
+  {
+   "id": "CI-LE-010",
+   "cc": "ci",
+   "op": "lag",
+   "name": "Yamoussoukro Gare",
+   "area": "Yamoussoukro",
+   "lat": 6.8276,
+   "lng": -5.2893,
+   "price": 155,
+   "hours": "7am – 9pm",
+   "amen": "Restaurant",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "CI-LE-010-1",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.6,
+   "n0": 32,
+   "upd": 2
+  },
+  {
+   "id": "CI-WS-002",
+   "cc": "ci",
+   "kind": "swap",
+   "op": "woro",
+   "name": "Adjamé Liberté",
+   "area": "Adjamé, Abidjan",
+   "lat": 5.3537,
+   "lng": -4.0237,
+   "price": 800,
+   "hours": "5am – 11pm",
+   "amen": "Market, gare",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 18,
+   "r0": 4.1,
+   "n0": 85,
+   "upd": 9,
+   "conns": [
+    {
+     "id": "CI-WS-002-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S6",
+     "slot": 6,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S7",
+     "slot": 7,
+     "status": "offline"
+    },
+    {
+     "id": "CI-WS-002-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S9",
+     "slot": 9,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S12",
+     "slot": 12,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S13",
+     "slot": 13,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S14",
+     "slot": 14,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S15",
+     "slot": 15,
+     "status": "offline"
+    },
+    {
+     "id": "CI-WS-002-S16",
+     "slot": 16,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-002-S17",
+     "slot": 17,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-002-S18",
+     "slot": 18,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "CI-WS-007",
+   "cc": "ci",
+   "kind": "swap",
+   "op": "woro",
+   "name": "Yopougon Siporex",
+   "area": "Yopougon, Abidjan",
+   "lat": 5.3364,
+   "lng": -4.088,
+   "price": 800,
+   "hours": "5am – 10pm",
+   "amen": "Maquis, kiosk",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 12,
+   "r0": 3.6,
+   "n0": 138,
+   "upd": 7,
+   "conns": [
+    {
+     "id": "CI-WS-007-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-007-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-007-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-007-S8",
+     "slot": 8,
+     "status": "offline"
+    },
+    {
+     "id": "CI-WS-007-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "CI-WS-007-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "CI-WS-007-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "RW-IZ-001",
+   "cc": "rw",
+   "op": "inz",
+   "name": "Kimihurura Heights",
+   "area": "Kimihurura, Kigali",
+   "lat": -1.9536,
+   "lng": 30.0927,
+   "price": 350,
+   "hours": "Open 24 hours",
+   "amen": "Café, restrooms",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "RW-IZ-001-1",
+     "status": "busy"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "RW-IZ-001-2",
+     "status": "available"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.5,
+   "n0": 51,
+   "upd": 5
+  },
+  {
+   "id": "RW-IZ-003",
+   "cc": "rw",
+   "op": "inz",
+   "name": "Remera Stadium",
+   "area": "Remera, Kigali",
+   "lat": -1.9577,
+   "lng": 30.1127,
+   "price": 350,
+   "hours": "6am – 10pm",
+   "amen": "Restaurants",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 90,
+     "id": "RW-IZ-003-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "RW-IZ-003-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4,
+   "n0": 104,
+   "upd": 3
+  },
+  {
+   "id": "RW-IZ-008",
+   "cc": "rw",
+   "op": "inz",
+   "name": "Huye Centre",
+   "area": "Huye, Southern",
+   "lat": -2.5967,
+   "lng": 29.7394,
+   "price": 360,
+   "hours": "7am – 8pm",
+   "amen": "Market",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "RW-IZ-008-1",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.9,
+   "n0": 17,
+   "upd": 1
+  },
+  {
+   "id": "RW-MS-002",
+   "cc": "rw",
+   "kind": "swap",
+   "op": "motor",
+   "name": "Nyabugogo Park",
+   "area": "Nyabugogo, Kigali",
+   "lat": -1.9393,
+   "lng": 30.045,
+   "price": 1300,
+   "hours": "5am – 11pm",
+   "amen": "Bus park, food",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 18,
+   "r0": 4.4,
+   "n0": 70,
+   "upd": 8,
+   "conns": [
+    {
+     "id": "RW-MS-002-S1",
+     "slot": 1,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S4",
+     "slot": 4,
+     "status": "offline"
+    },
+    {
+     "id": "RW-MS-002-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S6",
+     "slot": 6,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S9",
+     "slot": 9,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S12",
+     "slot": 12,
+     "status": "offline"
+    },
+    {
+     "id": "RW-MS-002-S13",
+     "slot": 13,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S14",
+     "slot": 14,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S15",
+     "slot": 15,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S16",
+     "slot": 16,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-002-S17",
+     "slot": 17,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-002-S18",
+     "slot": 18,
+     "status": "available"
+    }
+   ]
+  },
+  {
+   "id": "RW-MS-005",
+   "cc": "rw",
+   "kind": "swap",
+   "op": "motor",
+   "name": "Kimironko Market",
+   "area": "Kimironko, Kigali",
+   "lat": -1.9367,
+   "lng": 30.1253,
+   "price": 1300,
+   "hours": "5am – 10pm",
+   "amen": "Market",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "60V · 2.0 kWh",
+   "slots": 12,
+   "r0": 3.9,
+   "n0": 123,
+   "upd": 6,
+   "conns": [
+    {
+     "id": "RW-MS-005-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-005-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S4",
+     "slot": 4,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-005-S5",
+     "slot": 5,
+     "status": "offline"
+    },
+    {
+     "id": "RW-MS-005-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-005-S8",
+     "slot": 8,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "RW-MS-005-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "RW-MS-005-S12",
+     "slot": 12,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "TG-TV-001",
+   "cc": "tg",
+   "op": "tgv",
+   "name": "Tokoin Boulevard",
+   "area": "Tokoin, Lomé",
+   "lat": 6.15,
+   "lng": 1.215,
+   "price": 150,
+   "hours": "Open 24 hours",
+   "amen": "Restaurants",
+   "conns": [
+    {
+     "type": "CCS2",
+     "kw": 60,
+     "id": "TG-TV-001-1",
+     "status": "available"
+    },
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "TG-TV-001-2",
+     "status": "offline"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.8,
+   "n0": 36,
+   "upd": 4
+  },
+  {
+   "id": "TG-TV-004",
+   "cc": "tg",
+   "op": "tgv",
+   "name": "Kara Centre",
+   "area": "Kara",
+   "lat": 9.5511,
+   "lng": 1.1861,
+   "price": 155,
+   "hours": "7am – 8pm",
+   "amen": "Market",
+   "conns": [
+    {
+     "type": "Type 2",
+     "kw": 22,
+     "id": "TG-TV-004-1",
+     "status": "busy"
+    }
+   ],
+   "kind": "charge",
+   "r0": 4.3,
+   "n0": 89,
+   "upd": 2
+  },
+  {
+   "id": "TG-ZS-002",
+   "cc": "tg",
+   "kind": "swap",
+   "op": "zem",
+   "name": "Grand Marché",
+   "area": "Centre, Lomé",
+   "lat": 6.129,
+   "lng": 1.223,
+   "price": 700,
+   "hours": "5am – 10pm",
+   "amen": "Market",
+   "veh": [
+    "Motorbike",
+    "Tricycle"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 18,
+   "r0": 3.8000000000000003,
+   "n0": 142,
+   "upd": 9,
+   "conns": [
+    {
+     "id": "TG-ZS-002-S1",
+     "slot": 1,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S2",
+     "slot": 2,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S3",
+     "slot": 3,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S5",
+     "slot": 5,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S6",
+     "slot": 6,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S7",
+     "slot": 7,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S8",
+     "slot": 8,
+     "status": "offline"
+    },
+    {
+     "id": "TG-ZS-002-S9",
+     "slot": 9,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S10",
+     "slot": 10,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S11",
+     "slot": 11,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S12",
+     "slot": 12,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S13",
+     "slot": 13,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S14",
+     "slot": 14,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S15",
+     "slot": 15,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-002-S16",
+     "slot": 16,
+     "status": "offline"
+    },
+    {
+     "id": "TG-ZS-002-S17",
+     "slot": 17,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-002-S18",
+     "slot": 18,
+     "status": "busy"
+    }
+   ]
+  },
+  {
+   "id": "TG-ZS-006",
+   "cc": "tg",
+   "kind": "swap",
+   "op": "zem",
+   "name": "Agoè Assiyéyé",
+   "area": "Agoè, Lomé",
+   "lat": 6.2286,
+   "lng": 1.2087,
+   "price": 700,
+   "hours": "5am – 10pm",
+   "amen": "Market, zem stand",
+   "veh": [
+    "Motorbike"
+   ],
+   "pack": "48V · 1.6 kWh",
+   "slots": 12,
+   "r0": 4.7,
+   "n0": 55,
+   "upd": 7,
+   "conns": [
+    {
+     "id": "TG-ZS-006-S1",
+     "slot": 1,
+     "status": "offline"
+    },
+    {
+     "id": "TG-ZS-006-S2",
+     "slot": 2,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-006-S3",
+     "slot": 3,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-006-S4",
+     "slot": 4,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-006-S5",
+     "slot": 5,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-006-S6",
+     "slot": 6,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-006-S7",
+     "slot": 7,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-006-S8",
+     "slot": 8,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-006-S9",
+     "slot": 9,
+     "status": "offline"
+    },
+    {
+     "id": "TG-ZS-006-S10",
+     "slot": 10,
+     "status": "available"
+    },
+    {
+     "id": "TG-ZS-006-S11",
+     "slot": 11,
+     "status": "busy"
+    },
+    {
+     "id": "TG-ZS-006-S12",
+     "slot": 12,
+     "status": "available"
+    }
+   ]
+  }
+ ],
+ "COUNTRIES": {
+  "gh": {
+   "code": "GH",
+   "name": "Ghana",
+   "city": "Accra",
+   "cur": "GHS",
+   "locale": "en-GH",
+   "lang": "English",
+   "c": [
+    "#CE1126",
+    "#FCD116",
+    "#006B3F"
+   ],
+   "me": {
+    "lat": 5.6037,
+    "lng": -0.187
+   },
+   "bounds": {
+    "north": 11.2,
+    "south": 4.7,
+    "west": -3.3,
+    "east": 1.25
+   },
+   "pay": [
+    "MTN MoMo",
+    "Telecel Cash",
+    "AirtelTigo Money"
+   ],
+   "phone": "024 000 0000",
+   "top": [
+    20,
+    50,
+    100,
+    200,
+    500,
+    1000
+   ],
+   "welcome": 150
+  },
+  "ng": {
+   "code": "NG",
+   "name": "Nigeria",
+   "city": "Lagos",
+   "cur": "NGN",
+   "locale": "en-NG",
+   "lang": "English",
+   "c": [
+    "#008751",
+    "#FFFFFF",
+    "#008751"
+   ],
+   "me": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   },
+   "bounds": {
+    "north": 13.9,
+    "south": 4.2,
+    "west": 2.7,
+    "east": 14.7
+   },
+   "pay": [
+    "OPay",
+    "MTN MoMo",
+    "Bank transfer"
+   ],
+   "phone": "0803 000 0000",
+   "top": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000
+   ],
+   "welcome": 25000
+  },
+  "ke": {
+   "code": "KE",
+   "name": "Kenya",
+   "city": "Nairobi",
+   "cur": "KES",
+   "locale": "en-KE",
+   "lang": "English · Kiswahili",
+   "c": [
+    "#000000",
+    "#BB0000",
+    "#006600"
+   ],
+   "me": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   },
+   "bounds": {
+    "north": 5,
+    "south": -4.7,
+    "west": 33.9,
+    "east": 41.9
+   },
+   "pay": [
+    "M-Pesa",
+    "Airtel Money"
+   ],
+   "phone": "0712 000 000",
+   "top": [
+    100,
+    250,
+    500,
+    1000,
+    2500,
+    5000
+   ],
+   "welcome": 2000
+  },
+  "ci": {
+   "code": "CI",
+   "name": "Côte d’Ivoire",
+   "city": "Abidjan",
+   "cur": "XOF",
+   "locale": "fr-CI",
+   "lang": "Français",
+   "c": [
+    "#F77F00",
+    "#FFFFFF",
+    "#009E60"
+   ],
+   "me": {
+    "lat": 5.348,
+    "lng": -4.01
+   },
+   "bounds": {
+    "north": 10.8,
+    "south": 4.3,
+    "west": -8.6,
+    "east": -2.5
+   },
+   "pay": [
+    "Orange Money",
+    "Wave",
+    "MTN MoMo"
+   ],
+   "phone": "07 00 00 00 00",
+   "top": [
+    1000,
+    2500,
+    5000,
+    10000,
+    25000,
+    50000
+   ],
+   "welcome": 10000
+  },
+  "rw": {
+   "code": "RW",
+   "name": "Rwanda",
+   "city": "Kigali",
+   "cur": "RWF",
+   "locale": "en-RW",
+   "lang": "Kinyarwanda · English · Français",
+   "c": [
+    "#00A1DE",
+    "#FAD201",
+    "#20603D"
+   ],
+   "me": {
+    "lat": -1.9441,
+    "lng": 30.0619
+   },
+   "bounds": {
+    "north": -1.04,
+    "south": -2.84,
+    "west": 28.86,
+    "east": 30.9
+   },
+   "pay": [
+    "MTN MoMo",
+    "Airtel Money"
+   ],
+   "phone": "078 000 0000",
+   "top": [
+    1000,
+    2500,
+    5000,
+    10000,
+    20000,
+    50000
+   ],
+   "welcome": 20000
+  },
+  "tg": {
+   "code": "TG",
+   "name": "Togo",
+   "city": "Lomé",
+   "cur": "XOF",
+   "locale": "fr-TG",
+   "lang": "Français",
+   "c": [
+    "#006A4E",
+    "#FFCE00",
+    "#D21034"
+   ],
+   "me": {
+    "lat": 6.1375,
+    "lng": 1.2123
+   },
+   "bounds": {
+    "north": 11.14,
+    "south": 6.1,
+    "west": -0.15,
+    "east": 1.81
+   },
+   "pay": [
+    "Flooz",
+    "T-Money"
+   ],
+   "phone": "90 00 00 00",
+   "top": [
+    1000,
+    2500,
+    5000,
+    10000,
+    25000,
+    50000
+   ],
+   "welcome": 10000
+  }
+ },
+ "VCLASSES": [
+  "Motorbike",
+  "Tricycle"
+ ],
+ "PLUGS": [
+  "CCS2",
+  "Type 2",
+  "CHAdeMO",
+  "GB/T"
+ ]
+}
