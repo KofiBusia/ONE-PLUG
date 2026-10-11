@@ -35,6 +35,11 @@ class Config:
     # Seed the demo networks on first boot when the stations table is empty
     AUTO_SEED = os.getenv("AUTO_SEED", "1") == "1"
 
+    # memory:// is fine for one instance; use redis://... when you run more than one worker/dyno
+    RATELIMIT_STORAGE_URI = os.getenv("RATELIMIT_STORAGE_URI", "memory://")
+    RATELIMIT_ENABLED = True
+    RATELIMIT_HEADERS_ENABLED = True
+
 
 class TestConfig(Config):
     TESTING = True

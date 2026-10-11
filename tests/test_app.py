@@ -19,7 +19,8 @@ def client():
 def test_home_and_health(client):
     r = client.get("/")
     assert r.status_code == 200
-    assert b"window.ONEPLUG" in r.data
+    assert b'id="oneplug-boot"' in r.data
+    assert "Content-Security-Policy" in r.headers
     assert client.get("/healthz").json == {"status": "ok"}
 
 

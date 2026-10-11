@@ -1,6 +1,9 @@
-/* Server bootstrap: Flask injects window.ONEPLUG in templates/index.html.
-   Maps keys come from environment variables (GOOGLE_MAPS_API_KEY, GOOGLE_MAP_ID). */
-const BOOT = window.ONEPLUG || {config:{},operators:{},stations:[],countries:{}};
+/* Server bootstrap: Flask injects a JSON data island (#oneplug-boot) in templates/index.html.
+   A non-executable <script type="application/json"> keeps this readable under a strict CSP
+   that disallows inline JavaScript. Maps keys come from environment variables
+   (GOOGLE_MAPS_API_KEY, GOOGLE_MAP_ID). */
+const BOOT = JSON.parse(document.getElementById("oneplug-boot")?.textContent || "null")
+  || {config:{},operators:{},stations:[],countries:{}};
 const API = BOOT.config.apiBase || "/api";
 const GOOGLE_MAPS_API_KEY = BOOT.config.googleMapsApiKey || "";
 const GOOGLE_MAP_ID       = BOOT.config.googleMapId || "";

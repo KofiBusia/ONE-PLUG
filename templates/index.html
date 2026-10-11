@@ -62,7 +62,7 @@
   </div>
 </nav>
 
-<script>window.ONEPLUG = {{ boot|tojson }};</script>
+<script type="application/json" id="oneplug-boot">{{ boot|tojson }}</script>
 <script src="https://cdn.jsdelivr.net/npm/@googlemaps/markerclusterer@2/dist/index.min.js"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>

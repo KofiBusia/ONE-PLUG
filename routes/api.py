@@ -3,6 +3,7 @@ import re
 
 from flask import Blueprint, jsonify, request
 
+from extensions import limiter
 from models import Country, Operator, Report, Review, Station, db, utcnow
 
 api_bp = Blueprint("api", __name__, url_prefix="/api")
@@ -99,6 +100,7 @@ def station(station_id):
 
 # ---------- community writes ----------
 @api_bp.post("/stations/<station_id>/reviews")
+@limiter.limit("20 per hour")
 def add_review(station_id):
     st = _station_or_404(station_id)
     data = _body()
@@ -111,6 +113,7 @@ def add_review(station_id):
 
 
 @api_bp.post("/stations/<station_id>/reports")
+@limiter.limit("20 per hour")
 def add_report(station_id):
     st = _station_or_404(station_id)
     data = _body()
@@ -145,6 +148,7 @@ def add_report(station_id):
 
 
 @api_bp.post("/stations/<station_id>/confirm")
+@limiter.limit("30 per hour")
 def confirm_status(station_id):
     st = _station_or_404(station_id)
     st.last_confirmed_at = utcnow()

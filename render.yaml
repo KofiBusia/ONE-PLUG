@@ -7,7 +7,8 @@ services:
     name: oneplug-africa
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --workers 2 --timeout 60
+    # python3 -m avoids PATH lookup failures for the gunicorn console script on Render.
+    startCommand: python3 -m gunicorn app:app -c gunicorn.conf.py
     healthCheckPath: /healthz
     envVars:
       - key: SECRET_KEY
