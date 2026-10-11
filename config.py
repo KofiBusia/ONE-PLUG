@@ -14,9 +14,12 @@ def _database_url() -> str:
         instance = BASE_DIR / "instance"
         instance.mkdir(exist_ok=True)
         return f"sqlite:///{instance / 'oneplug.db'}"
-    # Render and Heroku-style URLs sometimes use the old "postgres://" scheme
-    if url.startswith("postgres://"):
-        url = "postgresql://" + url[len("postgres://"):]
+    # Render gives a bare "postgresql://" (or the old "postgres://") URL; SQLAlchemy's
+    # default driver resolution for that no longer lands on psycopg2, so name the
+    # driver explicitly rather than rely on it guessing.
+    for prefix in ("postgres://", "postgresql://"):
+        if url.startswith(prefix):
+            return "postgresql+psycopg://" + url[len(prefix):]
     return url
 
 
