@@ -245,6 +245,7 @@ const STR={
   appearanceLbl:{en:"Appearance",fr:"Apparence"},autoLbl:{en:"Auto",fr:"Auto"},lightLbl:{en:"Light",fr:"Clair"},darkLbl:{en:"Dark",fr:"Sombre"},
   demoDataLbl:{en:"Demo data",fr:"Données de démo"},resetBtn:{en:"Reset",fr:"Réinitialiser"},
   languageLbl:{en:"Language",fr:"Langue"},englishLbl:{en:"English",fr:"Anglais"},frenchLbl:{en:"Français",fr:"Français"},
+  switchLanguageAria:{en:n=>`Switch language to ${n}`,fr:n=>`Changer la langue en ${n}`},
   oneAccountNote:{en:"OnePlug Africa: one account in every country. Switching country changes the map, networks, currency and payment methods; your vehicles, saved stations and history come with you. Each country keeps its own wallet balance in local currency.",
     fr:"OnePlug Africa : un seul compte dans tous les pays. Changer de pays modifie la carte, les réseaux, la devise et les moyens de paiement ; vos véhicules, stations enregistrées et historique vous suivent. Chaque pays conserve son propre solde de portefeuille en devise locale."},
   prototypeNote:{en:"Prototype with fictional networks and demo prices at real locations in 6 countries. Charger status, battery slots, charging and swaps are simulated.",
@@ -903,7 +904,7 @@ function renderAccount(){
     <p class="note">${t("prototypeNote")}</p></div>`;
   $("#v-account").querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{if(SES)return toast(t("stopChargingFirst"));S.vIdx=+b.dataset.v;save();renderAccount();renderExplore();});
   $("#v-account").querySelectorAll("[data-th]").forEach(b=>b.onclick=()=>{const th2=b.dataset.th;if(th2==="auto")delete document.documentElement.dataset.theme;else document.documentElement.dataset.theme=th2;try{localStorage.setItem(KEY+"-theme",th2);}catch(e){}renderAccount();if(gmap)initMap();});
-  $("#v-account").querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>{LANG=b.dataset.lang;try{localStorage.setItem("oneplug-africa-v1-lang",LANG);}catch(e){}applyStaticI18n();renderMarket();renderAccount();renderAll();refreshMapNoticeIfShown();});
+  $("#v-account").querySelectorAll("[data-lang]").forEach(b=>b.onclick=()=>setLang(b.dataset.lang));
   $("#ctryBtn").onclick=openCountry;
   $("#addV").onclick=addVehicle;
   $("#reset").onclick=()=>{if(SES)return toast(t("stopChargingFirst"));S=JSON.parse(JSON.stringify(defaults));receipt=null;save();renderAll();go("account");toast(t("demoReset"));};
@@ -955,7 +956,14 @@ function applyStaticI18n(){
   $("#meBtn").setAttribute("aria-label",t("myLocationAria"));
   $("#map").setAttribute("aria-label",t("mapAria"));
   $("#q").setAttribute("aria-label",t("searchStationsAria"));
+  const other=LANG==="en"?"fr":"en";
+  $("#langPill").textContent=other.toUpperCase();
+  $("#langPill").setAttribute("aria-label",t("switchLanguageAria",other==="en"?t("englishLbl"):t("frenchLbl")));
 }
+$("#langPill").onclick=()=>setLang(LANG==="en"?"fr":"en");
+/* single entry point for every language switch: the Account toggle and the header pill both call this */
+function setLang(l){LANG=l;try{localStorage.setItem("oneplug-africa-v1-lang",LANG);}catch(e){}
+  applyStaticI18n();renderMarket();renderAccount();renderAll();refreshMapNoticeIfShown();}
 loadGoogleMaps();
 try{const sv=localStorage.getItem(KEY+"-theme");if(sv&&sv!=="auto")document.documentElement.dataset.theme=sv;}catch(e){}
 applyStaticI18n();renderMarket();renderAll();
