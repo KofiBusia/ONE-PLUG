@@ -27,10 +27,10 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 <body>
-<div class="splash" id="splash" role="img" aria-label="OnePlug, charge and swap"><div></div><div class="brand"><span class="mark"><svg viewBox="0 0 200 230" aria-hidden="true"><rect x="70" y="4" width="16" height="36" rx="6" fill="#FFFFFF"></rect><rect x="114" y="4" width="16" height="36" rx="6" fill="#FFFFFF"></rect><path d="M100 186 C100 206 118 212 140 212 L152 212" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"></path><rect x="150" y="199" width="38" height="26" rx="6" fill="#FFFFFF"></rect><rect x="186" y="206" width="8" height="12" rx="2.5" fill="#FFFFFF"></rect><rect x="156" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><rect x="165.5" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><rect x="175" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><circle cx="100" cy="112" r="78" fill="#FFFFFF"></circle><circle cx="100" cy="112" r="67.5" fill="none" stroke="#006B3F" stroke-width="5" stroke-linecap="round" stroke-dasharray="318 106" transform="rotate(-90 100 112)" opacity="0.95"></circle><circle cx="100" cy="44.5" r="4.5" fill="#006B3F"></circle><circle cx="100" cy="112" r="57" fill="#FCD116"></circle><polygon points="108,70 76,118 98,118 90,154 126,104 104,104 116,70" fill="#10211A" stroke="#10211A" stroke-width="2" stroke-linejoin="round"></polygon></svg></span><div class="wm">OnePlug</div><div class="tag">Charge · Swap</div></div><div class="foot"><span>One app. Every charge, every swap.</span><span class="splash-mkt" id="splashMkt"></span></div></div>
+<div class="splash" id="splash" role="img" aria-label="OnePlug, charge and swap"><div></div><div class="brand"><span class="mark"><svg viewBox="0 0 200 230" aria-hidden="true"><rect x="70" y="4" width="16" height="36" rx="6" fill="#FFFFFF"></rect><rect x="114" y="4" width="16" height="36" rx="6" fill="#FFFFFF"></rect><path d="M100 186 C100 206 118 212 140 212 L152 212" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"></path><rect x="150" y="199" width="38" height="26" rx="6" fill="#FFFFFF"></rect><rect x="186" y="206" width="8" height="12" rx="2.5" fill="#FFFFFF"></rect><rect x="156" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><rect x="165.5" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><rect x="175" y="205" width="7" height="14" rx="1.5" fill="#006B3F"></rect><circle cx="100" cy="112" r="78" fill="#FFFFFF"></circle><circle cx="100" cy="112" r="67.5" fill="none" stroke="#006B3F" stroke-width="5" stroke-linecap="round" stroke-dasharray="318 106" transform="rotate(-90 100 112)" opacity="0.95"></circle><circle cx="100" cy="44.5" r="4.5" fill="#006B3F"></circle><circle cx="100" cy="112" r="57" fill="#FCD116"></circle><polygon points="108,70 76,118 98,118 90,154 126,104 104,104 116,70" fill="#10211A" stroke="#10211A" stroke-width="2" stroke-linejoin="round"></polygon></svg></span><div class="wm">OnePlug</div><div class="tag" data-i18n="splashTagShort">Charge · Swap</div></div><div class="foot"><span id="splashTag">One app. Every charge, every swap.</span><span class="splash-mkt" id="splashMkt"></span></div></div>
 <div class="app">
   <!-- EXPLORE -->
-  <section class="view active" id="v-explore" aria-label="Find chargers">
+  <section class="view active" id="v-explore" data-i18n-aria="exploreSectionAria" aria-label="Find chargers">
     <div class="mapzone">
       <div id="map" role="application" aria-label="Map of charging stations"></div>
       <div class="float-top">
@@ -39,8 +39,8 @@
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <input id="q" type="search" placeholder="Search chargers & swap stations" aria-label="Search stations">
         </label>
-        <div class="kindseg" id="kindseg" role="group" aria-label="Station type"></div>
-        <div class="chips" id="filters" role="group" aria-label="Filters"></div>
+        <div class="kindseg" id="kindseg" role="group" data-i18n-aria="stationTypeAria" aria-label="Station type"></div>
+        <div class="chips" id="filters" role="group" data-i18n-aria="filtersAria" aria-label="Filters"></div>
       </div>
       <div class="map-fabs">
         <button class="fab" id="fitBtn" aria-label="Show all of Ghana">GH</button>
@@ -51,28 +51,28 @@
     </div>
     <div class="drawer">
       <div class="handle"></div>
-      <div class="drawer-head"><h2 id="countLabel">Nearby</h2><span class="muted" id="netLabel"></span></div>
+      <div class="drawer-head"><h2 id="countLabel" data-i18n="nearbyHeading">Nearby</h2><span class="muted" id="netLabel"></span></div>
       <div id="hero"></div>
-      <div class="legend" id="legend" aria-label="Map key"></div>
+      <div class="legend" id="legend" data-i18n-aria="legendMapKeyAria" aria-label="Map key"></div>
       <div id="list"></div>
     </div>
   </section>
 
-  <section class="view" id="v-charge" aria-label="Charging"></section>
-  <section class="view" id="v-wallet" aria-label="Wallet"></section>
-  <section class="view" id="v-account" aria-label="Account"></section>
+  <section class="view" id="v-charge" data-i18n-aria="tabCharging" aria-label="Charging"></section>
+  <section class="view" id="v-wallet" data-i18n-aria="tabWallet" aria-label="Wallet"></section>
+  <section class="view" id="v-account" data-i18n-aria="tabAccount" aria-label="Account"></section>
 </div>
 
 <div class="page" id="page" role="dialog" aria-modal="true"><div class="page-inner" id="pageBody"></div></div>
 <div class="dock" id="dock"><div class="dock-inner" id="dockBody"></div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<nav class="tabs" aria-label="Main">
+<nav class="tabs" data-i18n-aria="mainNavAria" aria-label="Main">
   <div class="inner">
-    <button data-tab="explore" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Map</button>
-    <button data-tab="charge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg><span>Charging<i class="live-dot" id="liveDot"></i></span></button>
-    <button data-tab="wallet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18"/></svg>Wallet</button>
-    <button data-tab="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Account</button>
+    <button data-tab="explore" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span class="tlbl" data-i18n="tabMap">Map</span></button>
+    <button data-tab="charge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg><span><span class="tlbl" data-i18n="tabCharging">Charging</span><i class="live-dot" id="liveDot"></i></span></button>
+    <button data-tab="wallet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18"/></svg><span class="tlbl" data-i18n="tabWallet">Wallet</span></button>
+    <button data-tab="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="tlbl" data-i18n="tabAccount">Account</span></button>
   </div>
 </nav>
 
